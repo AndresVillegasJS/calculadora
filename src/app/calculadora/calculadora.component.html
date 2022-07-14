@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>{{titulo}}</h1>
+</div>
+
+<form>
+    <div class="form-group">
+        <label>Operando A</label>
+            <input type="number" class="form-control" placeholder="Escribe perando A"  name="operandoA"  [(ngModel)]="operandoA" />
+    </div>
+
+    <div class="form-group">
+        <label>Operando B</label>
+            <input type="number" class="form-control" placeholder="Escribe perando B"  name="operandoB"  [(ngModel)]="operandoB" />
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-warning" (click)="sumar()" >SUMAR</button> 
+        <button type="submit" class="btn btn-outline-secondary" (click)="multiplicar()">multiplicar</button>
+        <button type="submit" class="btn btn-danger" (click)="dividir()">dividir</button>
+        <button type="submit" class="btn btn-outline-dark" (click)="restar()">resta</button>
+    </div>
+
+        
+    
+</form>
+
+
+<label>Resultado: {{resultado}} </label>
+
